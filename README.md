@@ -35,7 +35,7 @@ There are two main sections that a RAC config file requires:
 
 ### `torizon`: Torizon Platform API Connection
 
-RAC connects to the Torizon Platform remote access service API through the Torizon device gateway, using mutual TLS. The config file needs to specify the server URL to connect to (the URL of the device gateway), the path where the server's certificate is located, and the path where the client's certifiecate and private are located. In TorizonCore, the default device gateway cert is provided in the root filesystem image at `/usr/lib/sota/root.crt`. The client cert and key are placed in `/var/sota/import` at provisioning time.
+RAC connects to the Torizon Platform remote access service API through the Torizon device gateway, using mutual TLS. The config file needs to specify the server URL to connect to (the URL of the device gateway), the path where the server's certificate is located, and the path where the client's certificate and private key are located. In TorizonCore, the default device gateway cert is provided in the root filesystem image at `/usr/lib/sota/root.crt`. The client cert and key are placed in `/var/sota/import` at provisioning time.
 
 This configuration should work for a default TorizonCore image:
 
